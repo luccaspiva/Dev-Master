@@ -26,6 +26,13 @@
 		<script>
 			console.log('resposta 1');
 			//insira a resposta aqui.
+			let array = new Array();
+			for (let i = 0; i<=100; i++){
+				if(i%7==0){
+					array.push(i);
+				}
+			}
+			console.log(array)
 		</script>
 
 		<div class="border"></div>
@@ -35,6 +42,18 @@
 		<script>
 			console.log('resposta 2');
 			//insira a resposta aqui.
+			let texto = "Seri.e";
+			let vezes = 3;
+			let novaString = new Array();
+
+			if (vezes > 0) {
+				for (let i = 0; i < vezes; i++) {
+					if (vezes > 0) {
+						novaString.push(texto)
+					}
+				}
+			}
+				console.log(novaString + ", ")	
 		</script>
 
 		<div class="border"></div>
@@ -43,13 +62,20 @@
 		<pre>&lt;div class="pai"&gt;&lt;/div&gt;<br>&lt;div class="filho&gt;&lt;/div&gt;</pre>
 		<p>Qual o código seria necessário para inserir a div 'filho' dentro da div 'pai'?</p>
 
-		<div class="pai"></div>
-		<div class="filho"></div>
+		<div id="pai"></div>
+		<div id="filho"></div>
 
 		<!--- RESPOSTA 3 ---->
+		<button onclick='append()'> Add div filho no pai</button>
 		<script>
 			console.log('resposta 3');
 			//insira a resposta aqui.
+			function append() {
+				let pai = document.getElementById('pai')
+				let filho = document.getElementById('filho')
+				console.log(pai.appendChild(filho))
+    		}
+	
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 4 ---->
@@ -78,6 +104,15 @@
 		<script>
 			console.log('resposta 5');
 			//insira a resposta aqui.
+			let idade = 18;
+			let maior ="maior de idade";
+			let menor = "menor de idade";
+
+			if (idade >= 18) {
+				console.log(maior)
+			} else {
+				console.log(menor)
+			}
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 6 ---->
@@ -97,6 +132,10 @@
 				pesoObj: '150g'
 			}
 			//insira a resposta aqui.
+			obj.nomeObj="Teclado";
+			obj.pesoObj="500g";
+
+			console.log(obj);
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 7 ---->
@@ -111,6 +150,12 @@
 		<script>
 			console.log('resposta 7');
 			//insira a resposta aqui.
+
+			var texto1 = "Eu quero trabalhar na Seri.e Design"
+			var ultimaPalavra = texto1.split
+			console.log("Ultima palavra: " + ultimaPalavra);
+			console.log("Quantidade de caracteres do texto: " + texto1.length);
+			console.log("O tipo da variavel texto1 é: " + typeof texto1)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 8 ---->
@@ -176,6 +221,8 @@
 				}, 1000);
 			}
 			observer();
+			
+
 		</script>
 		<p>Escolha a alternativa que melhor interpreta o que o bloco de código acima está fazendo?</p>
 		<ol>
@@ -187,7 +234,7 @@
 		</ol>
 		<!--- RESPOSTA 10 ---->
 		<div>
-			<p style="color: #F00;">RESPOSTA: </p>
+			<p style="color: #F00;">RESPOSTA: Alternativa 3 </p>
 		</div>
 	</div>
 </body>
