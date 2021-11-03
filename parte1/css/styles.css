@@ -1,0 +1,301 @@
+
+
+:root {
+  --roxo: #8158c5;
+  --amarelo: #ffa200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1170px !important;
+}
+
+.fundoMenu {
+  background-color: var(--roxo);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fundoAmarelo {
+  background-color: var(--amarelo);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0
+}
+
+.fundoBranco{
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+header input {
+  padding: 0.5rem;
+  /* border-radius: 5px; */
+  border: 1px solid #7f7f7f
+}
+footer {
+  width: 100%;
+}
+
+.fa {
+  color: #7f7f7f;
+}
+
+.container .menu{
+  display: flex;
+  
+  padding: 1rem 0;
+  /* justify-content: center; */
+  justify-content: space-between;
+}
+
+.container .menu li {
+  margin: 0 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .menu li:hover {
+  color: var(--amarelo)
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.categorias img {
+  margin-right: 0.750rem;
+}
+
+.categorias img:hover {
+  cursor: pointer;
+  
+}
+
+.categorias img:last-child {
+  margin-right: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.fundoImg:hover{
+  background-color: #c0abe2;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #7f7f7f
+}
+
+.flexRow {
+  display: flex
+}
+
+.novidades{
+  margin-bottom: 5rem;
+}
+.para {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  padding: 1rem 0;
+}
+
+.textoBranco {
+  color: #fff;
+  font-size: 0.750rem;
+  display: flex;
+  align-items: center;
+}
+
+.textoBranco .bold {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.textoBranco .bold span {
+  font-weight: normal;
+}
+
+.justify {
+  justify-content: space-around;
+}
+
+hr {
+  width: 1170px;
+  border: 1px solid var(--amarelo);
+}
+
+.fundoRoxo {
+  background-color: var(--roxo);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1.275rem;
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+small {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+}
+
+.flexRow input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.flexRow input::placeholder {
+  color: #fff
+}
+
+.flexRow input:hover {
+  cursor: pointer;
+}
+
+.flexRow button {
+  background: var(--amarelo);
+  border: none;
+  color: #fff;
+  font-size: 0.750rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.flexRow button:hover{
+  background: #ff7b00
+}
+
+.fa-facebook-square, .fa-instagram {
+  margin-right: 25px;
+  margin-bottom: 20px;
+
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.menuRodape {
+  justify-content: space-between;
+}
+
+.listTitle {
+  color: var(--roxo) !important;
+  font-weight: bold;
+}
+
+.liHover:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.listasFooter li {
+  margin-bottom: 1rem;
+  color: #7f7f7f;
+}
+
+.footerFim {
+  text-align: center;
+}
+
+.footerFim hr{
+  margin-bottom: 1rem;
+  border-color: #7f7f7f;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.hoverIcones i:hover {
+color:  var(--amarelo);
+cursor: pointer;
+}
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 520px){
+  .flexRow {
+    flex-direction: column;
+  }
+
+  .categorias  {
+    display: flex;
+    flex-direction: column
+  }
+  .categorias img {
+    align-self: center;
+    margin-bottom: 5px;
+  }
+  .categorias img:last-child {
+    margin-left: -11px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .fundoImg:hover {
+   cursor: pointer;
+  }
+
+  .para {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bixos {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    align-self: center;
+  }
+}
+
